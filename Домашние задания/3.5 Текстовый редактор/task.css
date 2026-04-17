@@ -8,3 +8,14 @@ textarea {
   border: 1px solid #e2e2e2;
   box-sizing: border-box;
 }
+
+#editor {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#clear-button {
+  padding: 8px 12px;
+  cursor: pointer;
+}

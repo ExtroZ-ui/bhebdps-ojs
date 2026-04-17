@@ -1,11 +1,19 @@
 body {
   margin: 0;
 }
+
 .slider {
   position: relative;
-  height: 300px;
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
 }
+
 .slider__items {
+  position: relative;
+  width: 100%;
   height: 100%;
 }
 
@@ -16,14 +24,14 @@ body {
   height: 100%;
 }
 
+.slider__item_active {
+  display: block;
+}
+
 .slider__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.slider__item_active {
-  display: block;
 }
 
 .slider__arrows {
@@ -39,8 +47,8 @@ body {
   top: 0;
   bottom: 0;
   width: 50px;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +57,7 @@ body {
 }
 
 .slider__arrow:hover {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .slider__arrow_next {
@@ -58,9 +66,9 @@ body {
 
 .slider__dots {
   position: absolute;
+  right: 50px;
   bottom: 20px;
   left: 50px;
-  right: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,16 +77,16 @@ body {
 .slider__dot {
   width: 7px;
   height: 7px;
-  border-radius: 50%;
-  background: #000;
   margin-right: 5px;
-  cursor: pointer
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
 }
 
 .slider__dot_active {
-  background: #fff;
+  background: #ffffff;
 }
 
 .slider__dot:hover {
-  background: #fff;
+  background: #ffffff;
 }
